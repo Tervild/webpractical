@@ -76,6 +76,10 @@
                     <td>6100</td>
                 </tr>
                 </table>
+                <br>
+                <button onclick="highlightTable()">Підсвітити таблицю</button>
+                <br><br>
+
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/YiJX7xgTBkM?si=dnASE_3wcpRiBpxg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
 
@@ -86,13 +90,16 @@
             <h2>Newsletter</h2>
         </div>
         <div>
-            <form>
+            <form onsubmit="checkEmail(event)">
                 <label for="email">Email для розсилки:</label><br>
                 <input type="email" id="email" name="email" required><br><br>
                 
-                <button type="submit">Підписатися</button>
+                <button type="submit" >Підписатися</button>
                 </form>
         </div>
+        <button onclick="easterEgg()">Dark Mode 😎</button>
     </footer>
+    <script src="script.js"></script>
+
 </body>
 </html>
